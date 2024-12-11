@@ -1,0 +1,114 @@
+/* Grundlegendes Styling */
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: black;
+    color: #A71219;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* LOVE Text */
+.love-text {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Herz- und Icon-Container */
+.heart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Abstand zwischen Icons und Herz */
+    margin: 20px 0;
+}
+
+/* Herz-Animation */
+.heart {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Social Icons */
+.social-icon {
+    font-size: 3rem;
+    color: #A71219;
+}
+
+/* Text unter dem GIF */
+.text-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.cta-text {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .love-text {
+        font-size: 3rem;
+    }
+
+    .heart {
+        width: 50%;
+    }
+
+    .social-icon {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .cta-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .love-text {
+        font-size: 2.5rem;
+    }
+
+    .heart {
+        width: 60%;
+    }
+
+    .social-icon {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .cta-text {
+        font-size: 1.2rem;
+    }
+}
